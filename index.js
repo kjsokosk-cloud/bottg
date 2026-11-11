@@ -83,7 +83,7 @@ if (state.step === 'waiting_for_bybit_data') {
   state.step = 'waiting_for_currency_bybit';
   return bot.sendMessage(chatId, 'Выберите валюту:', {
     reply_markup: {
-      keyboard: [['PYG'], ['NIO'], ['USD'],['DZD']],
+      keyboard: [['PYG'], ['NIO'], ['USD'],['DZD'],['TND']],
       resize_keyboard: true
     }
   });
@@ -121,7 +121,7 @@ if (state.step === 'waiting_for_binance_data') {
   state.step = 'waiting_for_currency_binance';
   return bot.sendMessage(chatId, 'Выберите валюту:', {
     reply_markup: {
-      keyboard: [['PYG'], ['NIO'], ['USD'],['DZD']],
+      keyboard: [['PYG'], ['NIO'], ['USD'],['DZD'],['TND']],
       resize_keyboard: true
     }
   });
